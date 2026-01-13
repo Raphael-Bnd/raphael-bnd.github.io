@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: jetbrains mono, monospace;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgba(0, 0, 0, 0);
+  background-image: url(https://wallpapercave.com/wp/wp7998102.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  position: relative;
+  min-height: 100vh;
+}
+
+h4 {
+  color: white;
+}
+
+#linkContato {
+  font-weight: 500;
+  color: rgb(224, 72, 64);
+}
+#linkContato:active {
+  color: rgb(255, 99, 92);
+}
+
+.fotoPerfil {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+.container {
+  background-color: rgba(0, 0, 0, 0.563);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  gap: 20px;
+}
+
+.headerContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+h1 {
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.behindBackgroundDarkModal {
+  position: fixed;
+  width: 70%;
+  height: 40%;
+  background-color: rgba(0, 0, 0, 0.688);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 10vh;
+  border-radius: 5ch;
+  backdrop-filter: blur(8px);
+}
+
+li {
+  color: white;
+  list-style: none;
+  max-width: 70%;
+  align-items: center;
+  text-align: center;
+  font-size: 18px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+.butao {
+  text-decoration: none;
+  color: white;
+  background-color: rgb(42, 42, 42);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.butao:hover {
+  background-color: rgb(70, 70, 70);
+  cursor: pointer;
+}
+
+.butao:active {
+  background-color: rgb(100, 100, 100);
+  transform: scale(0.98);
+}
+
+p {
+  color: white;
+  text-align: center;
+  margin-left: 0px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 1400px) and (min-width: 769px) {
+  .behindBackgroundDarkModal {
+    flex-direction: column;
+    width: 80%;
+    height: auto;
+    padding: 40px;
+    gap: 20px;
+  }
+
+  li {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .behindBackgroundDarkModal {
+    flex-direction: column;
+    width: 90%;
+    height: auto;
+    padding: 30px;
+    gap: 15px;
+  }
+
+  li {
+    grid-template-columns: 2fr 2fr;
+    max-width: 100%;
+  }
+
+  .fotoPerfil {
+    width: 100px;
+    height: 100px;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  h4 {
+    text-align: center;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 400px) {
+  li {
+    grid-template-columns: 1fr;
+    max-width: 100%;
+  }
+}
