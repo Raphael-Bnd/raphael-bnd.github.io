@@ -3,6 +3,7 @@
   padding: 0;
   font-family: jetbrains mono, monospace;
   box-sizing: border-box;
+  user-select: none;
 }
 
 body {
@@ -123,13 +124,14 @@ a:hover {
   text-decoration: underline;
 }
 
-@media (max-width: 1400px) and (min-width: 769px) {
+@media (max-width: 1920px) and (min-width: 769px) {
   .behindBackgroundDarkModal {
     flex-direction: column;
-    width: 80%;
+    width: 40%;
     height: auto;
     padding: 40px;
     gap: 20px;
+    text-align: center;
   }
 
   li {
