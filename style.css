@@ -73,6 +73,7 @@ h1 {
   z-index: 1000;
   padding: 10vh;
   border-radius: 5ch;
+  box-shadow: 0 5px 30px rgb(0, 0, 0);
   backdrop-filter: blur(8px);
 }
 
